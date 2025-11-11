@@ -1,6 +1,8 @@
 import WebGUI
 import HAL
 import Frequency
+# Enter sequential code!
+
 import cv2
 
 i = 0
@@ -39,6 +41,7 @@ while True:
             error = 320 - cX
 
             p_control = kp * error
+
             pd_control = Kd * (error - prev_error)
             prev_error = error
 
